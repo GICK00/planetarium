@@ -1,0 +1,176 @@
+ html {
+ 	scroll-behavior: smooth;
+}
+
+body {
+	background: white;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin: 0;
+}
+
+h1 {
+	font-family: "CalibriBold";
+	font-size: 17px;
+	color: white;
+}
+
+h2 {
+	font-family: "CalibriBold";
+	font-size: 24px;
+	color: black;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: "CalibriBold";
+	font-size: 32px;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h4 {
+	font-family: "CalibriBold";
+	font-size: 20px;
+	color: white;
+}
+
+.tagline {
+	font-family: "CalibriLight";
+	font-size: 16px;
+	margin: 0;
+	color: #7d7d7d;
+	position: absolute;
+}
+
+.basement_tagline {
+	font-family: "CalibriLight";
+	font-size: 16px;
+	margin: 0;
+	color: #a09e9e;
+	position: absolute;
+}
+
+
+.text_button {
+	font-family: "CalibriBold";
+	font-size: 24px;
+	color: white;
+	margin: auto;
+	width: 289px;
+	height: 36px;
+	transition: 0.5s;
+	-webkit-user-select: none;
+}
+
+.text_button:hover{
+	color: #494949;
+}
+
+.button {
+	float: right;
+	width: 100%;
+	max-width: 289px;
+}
+
+.link_size {	
+	display: block;
+	position: absolute;
+  	line-height: 1em;
+  	width: 289px;
+ 	height: 54px;
+  	padding-top: 31px;
+  	margin-left: -74px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+.navig a {
+	font-family: "CalibriLight";
+	font-size: 18px;
+	color: #222222;
+	text-decoration: none;
+	position: relative;
+}
+
+.navig_link::before {
+	content: '';
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #222222;
+	transition: 0.6s;
+	transform: scaleX(0);
+}
+
+.navig_link:hover:before {
+	transform: scaleX(1);
+}
+
+.arrow_left img, .arrow_right img {
+	transition: background-color 0.5s;
+	border-radius: 15px;
+}
+
+.arrow_left img:hover, .arrow_right img:hover {
+	width: 45px;
+	height: 68px;
+	background-color: silver;
+}
+
+.slide_1, .slide_2 p {
+	font-family: "CalibriLight_Italic";
+	font-size: 20px;
+}
+
+.order_text, .order_button {
+	font-family: "CalibriRegular";
+	font-size: 18px;
+}
+
+.order_text {
+	color: white;
+}
+
+input[type="text"]:focus { 
+	outline: none; 
+}
+
+input[type="text"]::placeholder {
+	color: white;
+	text-transform: uppercase;
+}
+
+input[type="button"], input[type="button"]:active, input[type="button"]:focus {
+    border: 0;
+}
+
+.order_button input {
+	width: 238px;
+	height: 57px;
+	border-radius: 10px;
+}
+
+.order img:hover {
+    transform: rotate(360deg);
+}
+
+.basement p {
+	font-family: "CalibriRegular";
+	font-size: 18px;
+	color: white;
+}
+
+.contact_info h3 {
+	color: white;
+	margin-top: 53px;
+}
+
+.contact_info img:hover {
+    transform: rotate(360deg);
+}

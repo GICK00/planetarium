@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "CalibriRegular";
+	src: url("../fonts/CalibriRegular/Calibri.eot");
+	src: url("../fonts/CalibriRegular/Calibri.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CalibriRegular/Calibri.woff") format("woff"),
+	url("../fonts/CalibriRegular/Calibri.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CalibriBold";
+	src: url("../fonts/CalibriBold/Calibri-Bold.eot");
+	src: url("../fonts/CalibriBold/Calibri-Bold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CalibriBold/Calibri-Bold.woff") format("woff"),
+	url("../fonts/CalibriBold/Calibri-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CalibriLight";
+	src: url("../fonts/CalibriLight/Calibri-Light.eot");
+	src: url("../fonts/CalibriLight/Calibri-Light.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CalibriLight/Calibri-Light.woff") format("woff"),
+	url("../fonts/CalibriLight/Calibri-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CalibriLight_Italic";
+	src: url("../fonts/CalibriLight_Italic/Calibri-LightItalic.eot");
+	src: url("../fonts/CalibriLight_Italic/Calibri-LightItalic.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CalibriLight_Italic/Calibri-LightItalic.woff") format("woff"),
+	url("../fonts/CalibriLight_Italic/Calibri-LightItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

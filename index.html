@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Космос под другим углом</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/css/fonts.css" >
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="shortcut icon" href="assets/img/logo.png" type="png">
+</head>
+<body>
+	<!-- Шапка инфо -->
+	<div class="background_header">
+		<div class="container">
+			<div>
+				<h1 class="header_time">Время работы 11:00 - 21:00</h1>
+				<h1 class="header_contact">Контакты +7 904 255 52 15</h1>
+			</div>	
+		</div>
+	</div>
+	<!-- Шапка основ -->
+	<div class="main_header">
+		<div class="container">
+			<div>
+				<div>
+					<a href="index.html"><img src="assets/img/logo.png" class="logo_img">
+					<h2 class="logo_text">Космос под другим углом</h2>
+					<div class="tagline">инновационный планетарий</div></a>
+				</div>
+				<div class="stripes">
+				<img src="assets/img/line.png">
+				</div>		
+			</div>		
+			<div class="button">
+				<img src="assets/img/button_background.png" class="img_button">
+				<a class="link_size" onClick="document.getElementById('order').scrollIntoView();" />
+					<p class="text_button">Купить билет</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Панель навигации -->
+	<div class="navig" align="center">
+		<div class="container">
+			<a href="" class="navig_link">Расписание</a>
+			<a href="price.html" class="navig_link">Цены</a>
+			<a href="contact.html" class="navig_link">Контакты</a>
+		</div>		
+	</div>
+	<!-- Слайдер -->
+	<div class="slider">
+		<div class="container">
+			<!-- Стрелки -->
+			<div class="arrow">
+				<div class="arrow_left" id="slider_control_left">
+					<a href="#" class="slider_control_left">
+						<img src="assets/img/arrow_left.png">
+					</a>
+				</div>	
+				<div class="arrow_right" id="slider_control_right">
+					<a href="#" class="slider_control_right">
+						<img src="assets/img/arrow_right.png">
+					</a>
+				</div>	
+			</div>
+			<!-- Слайды -->
+			<div class="slides">
+				<!-- Слайд 1 -->
+				<div class="slide_1" style="display:block;">
+					<div class="slide_1_planeta"></div>
+					<div>
+						<h2>Целая вселенная в одном помещении</h2>					
+						<div id="text_slide_1"><p>Удивительный мир планет и звезд ждет вас 
+						в наешм инновационном планетарии. 
+						Множество красочнх планет и звезд 
+						воспроизведенных с потресающей 
+						точностью благодаря инновационному 
+						оборудованию.</p>
+						<img src="assets/img/map.png"></div>
+					</div>	
+				</div>
+				<!-- Слайд 2 -->
+				<div class="slide_2" style="display:none;">
+					<div class="slide_2_telescope"></div>
+					<div>
+						<h2>Возможность выезда на дом </h2>					
+						<div id="text_slide_2"><p>Возможномть выезда на дом с 
+						современным оборудованием. Обеспечиват вам красивый видоткуда угодно.</p>
+						<img src="assets/img/map_2.png"></div>
+					</div>	
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- Звезды -->
+	<div> 
+		<div class="stars_title">
+			<div class="container">
+				<div>
+					<h3>Удивительный мир звезд</h3>	
+				</div>
+			</div>
+		</div>
+		<div class="stars">
+			<div class="container">
+				<img src="assets/img/stars_1.png" alt="assets/img/orig/Milky-Way-Galaxy-Star-Map.jpg" class="image">
+				<img src="assets/img/stars_2.png" alt="assets/img/orig/sculp1.jpg" class="image">
+				<img src="assets/img/stars_3.png" alt="assets/img/orig/01c32c447207af61b653975495bd03d4_cropped_1332x1088.jpg"class="image">
+			</div>
+		</div>
+	</div>
+	<!-- Заказ билета -->
+	<div class="order_background">
+		<div class="container">
+			<div class="order" id="order">
+				<div class="order_info">
+					<dic class="order_text_block">
+						<input type="text" class="order_text" name="" placeholder="Ф.И.О">
+						<input type="text" class="order_text" name="" placeholder="Дата посещения" maxlength="5">
+						<input type="text" class="order_text" name="" placeholder="Номер телефона" pattern="[0-9]{3}-[0-9]{3}">
+					</dic>
+					<div class="order_button">
+						<input type="button">
+					</div>
+					<div>
+						<img src="assets/img/order_planeta.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Подвал -->
+	<div class="basement">
+		<dir class="container">
+			<dir class="basement_info">
+				<h4>Адрес:</h4>
+				<p>г.Владимир</p>
+			</dir>
+			<dir class="basement_info">
+				<h4>Контаты</h4>
+				<p>+7 904 255 52 15</p>
+			</dir>
+			<dir class="basement_info">
+				<h4>Соц. сети</h4>
+				<dir class="social_network">
+					<a href="https://twitter.com/_gick00_"><img src="assets/img/twitter.png"></a>
+					<a href="https://vk.com/gick00"><img src="assets/img/vk.png"></a>
+				</dir>
+			</dir>
+			<dir class="basement_info">
+				<div class="basement_logo">
+					<a href="index.html"><img src="assets/img/logo.png" class="basement_logo_img">
+					<h2 class="basement_logo_text">Космос под другим углом</h2>
+					<div class="basement_tagline">инновационный планетарий</div></a>
+				</div>
+			</dir>
+		</dir>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/script/script.js"></script>
+</body>
+</html>
