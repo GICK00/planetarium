@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .container {
 	display: block;
 	width: 100%;
@@ -83,6 +90,8 @@
 }
 
 .arrow {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: absolute;
 	margin-top: 233px;
@@ -189,6 +198,8 @@
 
 .stars img {
 	margin: -13px 30px 0 30px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -218,7 +229,9 @@
     left: 50%;
     top: 50%;
     border-radius: 10px;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .order_background {
@@ -260,11 +273,16 @@
 }
 
 .order img {
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	float: right;
 	margin-top: 90px;
 	margin-right: -100px;
+    -webkit-transition: -webkit-transform 15s ease-in-out;
+    transition: -webkit-transform 15s ease-in-out;
+    -o-transition: transform 15s ease-in-out;
     transition: transform 15s ease-in-out;
+    transition: transform 15s ease-in-out, -webkit-transform 15s ease-in-out;
 } 
 
 .basement {
@@ -281,7 +299,8 @@
 }
 
 .social_network {
-	padding-inline-start: 0;
+	-webkit-padding-start: 0;
+	        padding-inline-start: 0;
 	margin-top: 5px;
 }
 
@@ -316,25 +335,31 @@
 	height: 700px;
 	margin: auto;
 	margin-bottom: 45px;
+	position: relative;
 }
 
 .contact_info {
 	background: url("../img/background_contact_container.png");
 	width: 974px;
 	height: 563px; 
-	bottom: 0;
-	position: absolute;
+	margin: auto;
 	background-repeat: no-repeat;
-	margin-bottom: 83px;
-	left: 23.5%;
+	position: absolute;
+	left: 24%;
+	top: 19.5%;
 }
 
 .contact_info img {
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	float: left;
 	margin-top: -230px;
 	margin-left: -150px;
+    -webkit-transition: -webkit-transform 15s ease-in-out;
+    transition: -webkit-transform 15s ease-in-out;
+    -o-transition: transform 15s ease-in-out;
     transition: transform 15s ease-in-out;
+    transition: transform 15s ease-in-out, -webkit-transform 15s ease-in-out;
 }
 
 .background_price {

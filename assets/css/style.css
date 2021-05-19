@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
  html {
  	scroll-behavior: smooth;
 }
@@ -62,6 +69,8 @@ h4 {
 	margin: auto;
 	width: 289px;
 	height: 36px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	-webkit-user-select: none;
 }
@@ -104,15 +113,23 @@ h4 {
 	width: 100%;
 	height: 1px;
 	background-color: #222222;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
 	transition: 0.6s;
-	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	    -ms-transform: scaleX(0);
+	        transform: scaleX(0);
 }
 
 .navig_link:hover:before {
-	transform: scaleX(1);
+	-webkit-transform: scaleX(1);
+	    -ms-transform: scaleX(1);
+	        transform: scaleX(1);
 }
 
 .arrow_left img, .arrow_right img {
+	-webkit-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 	border-radius: 15px;
 }
@@ -141,6 +158,26 @@ input[type="text"]:focus {
 	outline: none; 
 }
 
+input[type="text"]::-webkit-input-placeholder {
+	color: white;
+	text-transform: uppercase;
+}
+
+input[type="text"]::-moz-placeholder {
+	color: white;
+	text-transform: uppercase;
+}
+
+input[type="text"]:-ms-input-placeholder {
+	color: white;
+	text-transform: uppercase;
+}
+
+input[type="text"]::-ms-input-placeholder {
+	color: white;
+	text-transform: uppercase;
+}
+
 input[type="text"]::placeholder {
 	color: white;
 	text-transform: uppercase;
@@ -157,7 +194,9 @@ input[type="button"], input[type="button"]:active, input[type="button"]:focus {
 }
 
 .order img:hover {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 .basement p {
@@ -172,5 +211,7 @@ input[type="button"], input[type="button"]:active, input[type="button"]:focus {
 }
 
 .contact_info img:hover {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
