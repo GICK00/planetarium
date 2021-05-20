@@ -8,10 +8,12 @@
 .container {
 	display: block;
 	width: 100%;
+	height: 100%;
 	max-width: 1130px;
 	margin: 0 auto;
 }
 .background_header {
+	display: inline-block;
 	width: 100%;
 	margin: 0 auto;
 	background-color: black;
@@ -25,13 +27,14 @@
 }
 
 .header_contact {
-	float: left;
+	float: right;
 	padding-top: 9px;
-	padding-left: 575px;
+	padding-right: 86px;
 }
 
 .main_header {
 	height: 107px;
+	display: block;
 }
 
 .logo_img {
@@ -55,10 +58,18 @@
 	padding-left: 96px;
 }
 
-.stripes {
+.line {
 	float: left;
-	margin-top: 26px;
-	margin-left: 36px;
+	margin-top: 42.5px;
+	margin-left: 50px;
+	width: 100%;
+	max-width: 400px;
+} 
+
+.line div {
+    border-bottom: 1px solid black; 
+    width: 100%;
+    margin-top: 3px;
 }
 
 .img_button {
@@ -83,6 +94,7 @@
 }
 
 .slider {
+	display: inline-block;
 	width: 100%;
 	margin: 0 auto;
 	background: url("../img/slider_backgtound.png");
@@ -342,9 +354,8 @@
 	background: url("../img/background_contact_container.png");
 	width: 974px;
 	height: 563px; 
-	margin: auto;
 	background-repeat: no-repeat;
-	position: absolute;
+	position: absolute; /* Плохо сделано, не могу переделать */ 
 	left: 24%;
 	top: 19.5%;
 }
@@ -373,7 +384,7 @@
 	width: 804px;
 	height: 563px;
 	border-radius: 15px;
-	position: absolute;
+	position: absolute; /* Плохо сделано, не могу переделать */
 	background-repeat: no-repeat;
 	left: 28.5%;
 	top: 26.5%;
@@ -381,4 +392,88 @@
 
 .price_info h3 {
 	margin-top: 34px;
+}
+
+.notification {
+	position: fixed;
+	z-index: 1001;
+	left: -400px;
+	bottom: 10px;
+	opacity: 0;
+	width: 250px;
+	height: 120px;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transition: all 0.5s ease;
+	display: flex;
+	background-color: #454545;
+	border: 2px;
+	border-color: white;
+	border-radius: 10px;
+}
+
+.notification.go {
+	left: 20px;
+	opacity: 1;
+}
+
+.notification .prem {
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.notification .prem .tit {
+	font-family: "CalibriRegular";
+	font-size: 20px;
+	font-weight: 900;
+	color: white;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.notification .prem .descr {
+	font-family: "CalibriLight";
+	font-weight: 300;
+	font-size: 16px;
+	color: white;
+	margin: 0.2em 0;
+}
+
+.notification .prem > .btns {
+	font-family: "CalibriRegular";
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 6px;
+}
+
+.notification .prem > .btns a {
+	border-radius: 3px;
+	padding: 4px 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	transition: all 0.4s ease-in-out;
+	display: block;
+	width: 47%;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification .prem > .btns a.vk_bg {
+	background-color: #597da3;
+}
+
+.notification .prem > .btns a.twitter_bg {
+	background-color: #00acee;
 }
