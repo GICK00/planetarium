@@ -5,16 +5,18 @@
 * Browsers: last 4 version
 */
 
- html {
+html {
  	scroll-behavior: smooth;
 }
 
 body {
 	background: white;
-	margin: 0;
 	width: 100%;
 	height: 100%;
 	max-width: 1920px;
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -85,11 +87,21 @@ h4 {
 	float: right;
 	width: 100%;
 	max-width: 289px;
-	transition: 1s;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
 }
 
 .button:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+}
+
+.button:active {
+	-webkit-transform: scale(0.85);
+	    -ms-transform: scale(0.85);
+	        transform: scale(0.85);
 }
 
 .link_size {	
@@ -139,13 +151,26 @@ h4 {
 	-o-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 	border-radius: 15px;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .arrow_left img:hover, .arrow_right img:hover {
 	width: 45px;
 	height: 68px;
 	background-color: silver;
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
+
+.arrow_left img:active, .arrow_right img:active {
+	-webkit-transform: scale(0.8);
+	    -ms-transform: scale(0.8);
+	        transform: scale(0.8);
+}
+
 
 .slide_1, .slide_2 p {
 	font-family: "CalibriLight_Italic";
@@ -198,6 +223,23 @@ input[type="button"], input[type="button"]:active, input[type="button"]:focus {
 	width: 238px;
 	height: 57px;
 	border-radius: 10px;
+	font-family: "CalibriBold";
+	font-size: 24px;
+	text-transform: uppercase;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.order_button input:hover {
+	background-color: black;
+	color: white;
+}
+
+.order_button input:active {
+	-webkit-transform: scale(0.85);
+	    -ms-transform: scale(0.85);
+	        transform: scale(0.85);
 }
 
 .order img:hover {
@@ -224,6 +266,9 @@ input[type="button"], input[type="button"]:active, input[type="button"]:focus {
 }
 
 .notification .prem > .btns a:hover {
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-	transform: scale(1.1);
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }

@@ -4,8 +4,8 @@
 	<title>Космос под другим углом</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
-	<link rel="stylesheet" href="assets/css/fonts.css" >
-	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="shortcut icon" href="assets/img/logo.png" type="png">
 </head>
@@ -23,7 +23,7 @@
 	<div class="main_header">
 		<div class="container">
 			<div>
-				<div>
+				<div class="logo">
 					<a href="index.html"><img src="assets/img/logo.png" class="logo_img">
 					<h2 class="logo_text">Космос под другим углом</h2>
 					<div class="tagline">инновационный планетарий</div></a>
@@ -40,14 +40,14 @@
 			</div>		
 			<div class="button">
 				<img src="assets/img/button_background.png" class="img_button">
-				<a class="link_size" onClick="document.getElementById('order').scrollIntoView();" />
-					<p class="text_button">Купить билет</p>
+				<a class="link_size" onClick="document.getElementById('order').scrollIntoView();">
+					<p class="text_button">Оформить билет</p>
 				</a>
 			</div>
 		</div>
 	</div>
 	<!-- Панель навигации -->
-	<div class="navig" align="center">
+	<div class="navig" >
 		<div class="container">
 			<a href="" class="navig_link">Расписание</a>
 			<a href="price.html" class="navig_link">Цены</a>
@@ -57,23 +57,24 @@
 	<!-- Слайдер -->
 	<div class="slider">
 		<div class="container">
-			<!-- Стрелки -->
-			<div class="arrow">
-				<div class="arrow_left" id="slider_control_left">
-					<a href="#" class="slider_control_left">
-						<img src="assets/img/arrow_left.png">
-					</a>
-				</div>	
-				<div class="arrow_right" id="slider_control_right">
-					<a href="#" class="slider_control_right">
-						<img src="assets/img/arrow_right.png">
-					</a>
-				</div>	
-			</div>
-			<!-- Слайды -->
-			<div class="slides">
-				<!-- Слайд 1 -->
-				<div class="slide_1" style="display:block;">
+			<div>
+				<!-- Стрелки -->
+				<div class="arrow">
+					<div class="arrow_left" id="slider_control_left">
+						<a href="#" class="slider_control_left">
+							<img src="assets/img/arrow_left.png">
+						</a>
+					</div>	
+					<div class="arrow_right" id="slider_control_right">
+						<a href="#" class="slider_control_right">
+							<img src="assets/img/arrow_right.png">
+						</a>
+					</div>	
+				</div>
+				<!-- Слайды -->
+				<div class="slides">
+					<!-- Слайд 1 -->
+					<div class="slide_1" style="display:block;">
 					<div class="slide_1_planeta"></div>
 					<div>
 						<h2>Целая вселенная в одном помещении</h2>					
@@ -85,9 +86,9 @@
 						оборудованию.</p>
 						<img src="assets/img/map.png"></div>
 					</div>	
-				</div>
+					</div>
 				<!-- Слайд 2 -->
-				<div class="slide_2" style="display:none;">
+					<div class="slide_2" style="display:none;">
 					<div class="slide_2_telescope"></div>
 					<div>
 						<h2>Возможность выезда на дом </h2>					
@@ -95,12 +96,13 @@
 						современным оборудованием. Обеспечиват вам красивый видоткуда угодно.</p>
 						<img src="assets/img/map_2.png"></div>
 					</div>	
+					</div>
 				</div>
-			</div>	
+			</div>		
 		</div>
 	</div>
 	<!-- Звезды -->
-	<div> 
+	<div class="stars"> 
 		<div class="stars_title">
 			<div class="container">
 				<div>
@@ -108,7 +110,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="stars">
+		<div class="stars_img">
 			<div class="container">
 				<img src="assets/img/stars_1.png" alt="assets/img/orig/Milky-Way-Galaxy-Star-Map.jpg" class="image">
 				<img src="assets/img/stars_2.png" alt="assets/img/orig/sculp1.jpg" class="image">
@@ -127,7 +129,7 @@
 						<input type="text" class="order_text" name="" placeholder="Номер телефона" pattern="[0-9]{3}-[0-9]{3}">
 					</dic>
 					<div class="order_button">
-						<input type="button">
+						<input type="button"value="Оформить билет" onClick="alert('Поздравляем, вы оформили билет, через несколько минут с вами свяжеться менеджер для обсуждения деталей')">
 					</div>
 					<div>
 						<img src="assets/img/order_planeta.png">
@@ -164,7 +166,7 @@
 		</dir>
 	</div>
 	<!-- Уведомления -->
-	<div class="notification go">
+	<div class="notification">
 		<div class="prem">
 			<div class="tit">Мы есть в соц. сетях</div>
 			<div class="descr">Инновационный планетарий</div>
