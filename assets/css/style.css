@@ -15,8 +15,7 @@ body {
 	height: 100%;
 	max-width: 1920px;
 	max-height: 100%;
-	margin: 0;
-	padding: 0;
+	margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -215,7 +214,7 @@ input[type="text"]::placeholder {
 	text-transform: uppercase;
 }
 
-input[type="button"], input[type="button"]:active, input[type="button"]:focus {
+input[type="submit"], input[type="submit"]:active, input[type="submit"]:focus {
     border: 0;
 }
 

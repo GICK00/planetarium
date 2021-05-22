@@ -11,7 +11,7 @@
 	height: 100%;
 	max-width: 1130px;
 	margin: 0 auto;
-}
+} 
 
 .background_header {
 	display: inline-block;
@@ -39,6 +39,7 @@
 .main_header {
 	height: 107px;
 	display: block;
+	overflow: hidden;
 }
 
 .logo {
@@ -110,17 +111,20 @@
 }
 
 .slider {
-	display: block;
+	display: block; 
 	width: 100%;
 	height: 533px;
 	max-height: 1200px;
 	margin: 0 auto;
 	background: url("../img/slider_backgtound.png");
+	background-position: center center;
+	position: relative;
 }
 
 .arrow {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: flex;
 	position: absolute;
 	margin-top: 233px;
 }
@@ -131,18 +135,17 @@
 }
 
 .arrow_left {
-	display: block;
-	margin-left: 30.25%;    /* 51px; */
+	margin-left: 51px;    /* 51px; */
 }
 
 .arrow_right {
-	display: block;
-	margin-left: 1099.25%;   /* 948px; */
+	margin-left: 948px;   /* 948px; */
 }
 
 .slide_1 {
 	float: left;
 	position: absolute;
+	overflow: auto;
 	margin-left: 7.25%;
 	margin-top: 60px;
 	margin-right: 7.25%;
@@ -163,12 +166,14 @@
 
 .slide_1 h2 {
 	float: left;
-	margin-top: 72px;	
+	margin-top: 72px;
+	margin-left: 6px;
 }
 
 #text_slide_1 {
 	padding-top: 137px;
 	margin-right: 20px;
+	margin-left: 20px;
 }
 
 #text_slide_1 img {
@@ -179,14 +184,14 @@
 .slide_2 {
 	float: left;
 	position: absolute;
+	overflow: auto;
 	margin-left: 7.25%;
 	margin-top: 60px;
 	margin-right: 7.25%;
 	background-color: white;
-	border: 1px;
 	border-radius: 10px;
-	width: 873px;
-	height: 401px;
+	max-width: 873px;
+	max-height: 401px;
 }
 
 .slide_2_telescope {
@@ -268,18 +273,19 @@
 .order_background {
 	position: relative;
 	background: url("../img/order_container_background.png");
+	background-position: center center;
 	width: 100%;
 	height: 451px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .order {
 	background: url("../img/order_background.png");
 	width: 85%;
 	height: 80%;
-	max-height: 125%;
-	min-width: 10%;
 	margin: 0 auto;
+	overflow-y: auto;
 }
 
 .order_text_block, .order_button {
@@ -307,13 +313,20 @@
 	margin-left: 100px;
 }
 
+.order_planeta {
+	position: relative;
+	overflow: hidden;
+	height: 276.2px; 
+	width: 225.5px;
+	padding-top: 85px;
+	padding-left: 55px;
+}
+
 .order img {
 	position: absolute;
 	-o-object-fit: cover;
 	   object-fit: cover;
 	float: right;
-	margin-top: 85px;
-	margin-left: 55px;
     -webkit-transition: -webkit-transform 15s ease-in-out;
     transition: -webkit-transform 15s ease-in-out;
     -o-transition: transform 15s ease-in-out;
@@ -322,16 +335,20 @@
 } 
 
 .basement {
+	display: inline-block;
 	background: url("../img/basement_background.png");
+	background-position: center center;
+	background-repeat: repeat-y;
 	width: 100%;
-	height: 180px;
+	min-height: 180px;
+	max-height: 480px;
 	margin: 0 auto;
 }
 
 .basement_info {
 	float: left;
 	margin-top: 32px;
-	margin-left: 51px;
+	margin-left: 50px; 
 }
 
 .social_network {
@@ -379,17 +396,33 @@
 	width: 974px;
 	height: 563px; 
 	background-repeat: no-repeat;
-	position: absolute; /* Плохо сделано, не могу переделать */ 
+	position: absolute;
 	left: 24%;
 	top: 19.5%;
+}
+
+.contact h3{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+}
+
+.contact_planeta {
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	width: 280px;
+	height: 280px;
 }
 
 .contact_info img {
 	-o-object-fit: cover;
 	   object-fit: cover;
 	float: left;
-	margin-top: -230px;
-	margin-left: -150px;
+	position: absolute;
+	margin-top: -160px;
+	margin-left: -160px;
     -webkit-transition: -webkit-transform 15s ease-in-out;
     transition: -webkit-transform 15s ease-in-out;
     -o-transition: transform 15s ease-in-out;
@@ -399,19 +432,22 @@
 
 .background_price {
 	background: url("../img/background_price.png");
+	background-position: center center;
 	width: 100%;
 	height: 710px;
+	position: relative;
 }
 
 .price_info {
 	background-color: white;
+	overflow: auto;
 	width: 804px;
 	height: 563px;
 	border-radius: 15px;
-	position: absolute; /* Плохо сделано, не могу переделать */
+	position: absolute; 
 	background-repeat: no-repeat;
 	left: 28.5%;
-	top: 26.5%;
+	top: 10%;
 }
 
 .price_info h3 {

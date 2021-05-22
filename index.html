@@ -123,15 +123,17 @@
 		<div class="container">
 			<div class="order" id="order">
 				<div class="order_info">
-					<dic class="order_text_block">
-						<input type="text" class="order_text" name="" placeholder="Ф.И.О">
-						<input type="text" class="order_text" name="" placeholder="Дата посещения" maxlength="5">
-						<input type="text" class="order_text" name="" placeholder="Номер телефона" pattern="[0-9]{3}-[0-9]{3}">
-					</dic>
-					<div class="order_button">
-						<input type="button"value="Оформить билет" onClick="alert('Поздравляем, вы оформили билет, через несколько минут с вами свяжеться менеджер для обсуждения деталей')">
-					</div>
-					<div>
+					<form onsubmit="alert('Вы оформили билет, через несколько минут с вами свяжеться наш менеджер для уточнения информации.');return false">
+						<div class="order_text_block">
+							<input type="text" class="order_text" required name="" placeholder="Ф.И.О">
+							<input type="text" class="order_text" name="" placeholder="Дата посещения" maxlength="5">
+							<input type="text" class="order_text" required name="" placeholder="Номер телефона"  minlength="11"maxlength="11">
+						</div>
+						<div class="order_button">
+							<input type="submit"value="Оформить билет" onClick="alert('Проверка введенных данных...')">
+						</div>
+					</form>	
+					<div class="order_planeta">
 						<img src="assets/img/order_planeta.png">
 					</div>
 				</div>
